@@ -3,7 +3,7 @@
     if(isset($_POST["calculate"])){
         $num1 = htmlspecialchars($_POST["num1"]);
         $num2 = htmlspecialchars($_POST["num2"]);
-        $operator = $_POST["operator"];
+        $operator = htmlspecialchars($_POST["operator"]);
 
         //  Validasi
         if(is_numeric($_POST["num1"]) && is_numeric($_POST["num2"])){
